@@ -63,6 +63,9 @@ Vagrant.configure("2") do |config|
       override.vm.provision 'reload'
     end
 
+    ## Uncomment this line to forward port
+    # misp_box.vm.network "forwarded_port", guest: 443, host: 443, protocol: "tcp"
+
     misp_box.vm.synced_folder "salt/roots/", "/srv/", type: "rsync"
     misp_box.vm.synced_folder '.', '/vagrant', disabled: true
   end
