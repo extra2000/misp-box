@@ -31,6 +31,25 @@ $ vagrant ssh misp-box -- sudo salt-call state.sls misp
 ```
 
 
+## Create systemd units for auto startup on boot
+
+Generate systemd units for MySQL and enable it:
+```
+$ cd ~/.config/systemd/user
+$ podman generate systemd --files --name mysql-pod
+$ systemctl --user daemon-reload
+$ systemctl --user enable pod-mysql-pod.service container-mysql-pod-mysql01.service
+```
+
+Generate systemd units for MISP and enable it:
+```
+$ cd ~/.config/systemd/user
+$ podman generate systemd --files --name misp-pod
+$ systemctl --user daemon-reload
+$ systemctl --user enable pod-misp-pod.service container-misp-pod-misp01.service
+```
+
+
 ## Initializing MISP
 
 First-time login:
