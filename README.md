@@ -30,12 +30,12 @@ Build and deploy MISP:
 $ vagrant ssh misp-box -- sudo salt-call state.sls misp
 ```
 
+
+## Initializing MISP
+
 First-time login:
 * email: `admin@admin.test`
 * password: `admin`
-
-
-## Initializing MISP
 
 To initialize feeds:
 1. Go to `Sync Actions` > `List Feeds`.
