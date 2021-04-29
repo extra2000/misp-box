@@ -16,7 +16,7 @@ $ cp -v salt/roots/pillar/misp.sls.example salt/roots/pillar/misp.sls
 
 Copy vagrant file from `vagrant/examples/` and then create the vagrant box (you can change to `--provider=virtualbox` if you want to use Oracle VirtualBox provider):
 ```
-$ cp -v vagrant/examples/Vagrantfile.misp-box.fedora-33.x86_64.example vagrant/Vagrantfile.misp-box
+$ cp -v vagrant/examples/Vagrantfile.misp-box.fedora-34.x86_64.example vagrant/Vagrantfile.misp-box
 $ vagrant up --provider=libvirt
 ```
 
