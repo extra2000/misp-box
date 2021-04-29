@@ -9,7 +9,7 @@ install:
   - git submodule update --init --recursive
 build_script:
   - cp -v salt/roots/pillar/misp.sls.example salt/roots/pillar/misp.sls
-  - cp -v vagrant/examples/Vagrantfile.misp-box.fedora-33.x86_64.example vagrant/Vagrantfile.misp-box
+  - cp -v vagrant/examples/Vagrantfile.misp-box.fedora-34.x86_64.example vagrant/Vagrantfile.misp-box
   - sudo vagrant up --provider=libvirt misp-box
   - sudo vagrant ssh misp-box -- sudo salt-call state.highstate
   - sudo vagrant ssh misp-box -- sudo salt-call state.sls misp.config
