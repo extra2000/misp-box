@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.1.0](https://github.com/extra2000/misp-box/compare/v1.0.0...v1.1.0) (2021-04-29)
+
+
+### Features
+
+* **vagrant:** Add Fedora 34 `x86_64` Vagrant file ([a1c5d20](https://github.com/extra2000/misp-box/commit/a1c5d20f60457c4eb438ce9c7f870fcd22a9e9b4))
+
+
+### Fixes
+
+* **misp-formula:** Patch update to `v1.0.1` ([82c36e2](https://github.com/extra2000/misp-box/commit/82c36e22b027221e9f02a8be307c05be47ffa271))
+* **podman-formula:** Patch updates from `v2.2.1` to `v2.2.2` ([a10eb8c](https://github.com/extra2000/misp-box/commit/a10eb8c3bd30031e7355df5f91f233a36f5e0492))
+
+
+### Continuous Integrations
+
+* **AppVeyor:** Change from Fedora 33 to Fedora 34 ([99e4a33](https://github.com/extra2000/misp-box/commit/99e4a337ff08f86277817920971050e9f72ef4c9))
+
+
+### Documentations
+
+* **README:** Add instructions how to generate Systemd unit files to auto start Podman pods on boot ([85e5cad](https://github.com/extra2000/misp-box/commit/85e5cada8f8cb849fdc737c9c7abba2d53b63ad9))
+* **README:** Move first-time login instructions into Section Initializing MISP ([8be36f2](https://github.com/extra2000/misp-box/commit/8be36f285c11b3e7ffe38a0de801e28d7d0a61db))
+* **README:** Set Fedora 34 as default Vagrant instructions ([0320fa2](https://github.com/extra2000/misp-box/commit/0320fa28a75fce9a65a008c87f80e79b0485a373))
+* **vagrant:** Add comment for port forwarding ([491bf6c](https://github.com/extra2000/misp-box/commit/491bf6c8ab4fc440289f482beaccbd88b6480eed))
+
 ## 1.0.0 (2021-04-19)
 
 
